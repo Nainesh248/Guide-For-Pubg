@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/all_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/progressrelative"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_30dp"
+        android:background="@drawable/attechment_shadow_back"
+        android:layout_height="300dp"
+        android:layout_margin="@dimen/_10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1AFFFFFF">
+            <ImageView
+                android:layout_width="130dp"
+                android:id="@+id/gunimage"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_10dp"
+                android:padding="@dimen/_10dp"
+                android:src="@drawable/ic_extended_mag_ar_smr_s12k"/>
+
+            <TextView
+                android:id="@+id/txt_attechmentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:text="COMPENSATOR (DMR, SR)"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_below="@+id/gunimage"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txt_attechmentname"
+                android:text="Reduces horizontal and virtical recall"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+            <TextView
+                android:id="@+id/txt_recoil1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txt_detail"
+                android:text=" -25% Recoil pattern"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+            <TextView
+                android:id="@+id/txt_recoil2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txt_recoil1"
+                android:text=" -20% Horizontal recoil"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+            <TextView
+                android:id="@+id/txt_recoil3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txt_recoil2"
+                android:text=" -20% Vertical recoil"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/attechments"
+        android:layout_below="@+id/progressrelative"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20dp"
+        android:text="ATTACHABLE WEAPONS"
+        android:background="@drawable/textview_yellow_white"
+        android:layout_marginTop="@dimen/_15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/attechweapon_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/attechments"
+                android:layout_marginTop="@dimen/_5dp"
+
+                android:orientation="vertical"
+                android:padding="@dimen/_10dp" />
+        </RelativeLayout>
+</RelativeLayout>

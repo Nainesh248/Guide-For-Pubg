@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "258779289762",
+    "project_id": "guide-for-battlegrounds-pubg",
+    "storage_bucket": "guide-for-battlegrounds-pubg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258779289762:android:fe40130e9d21906b831ffb",
+        "android_client_info": {
+          "package_name": "com.adsum.guideforbattlegroundspubg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258779289762-caqh6jgb6hqluj5trtkv6rd576s7n4cr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJtQth8PlSrXk0sNNvnMnW8FF83HdTTJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258779289762-caqh6jgb6hqluj5trtkv6rd576s7n4cr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

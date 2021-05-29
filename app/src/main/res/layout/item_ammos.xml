@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_ammos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#1AFFFFFF"
+        android:layout_marginTop="@dimen/_15dp"
+        app:cardCornerRadius="8dp">
+    <RelativeLayout
+        android:id="@+id/rl_ammos"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110dp"
+        android:background="@drawable/weapon_back">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2dp"
+            android:background="@color/trasparentblack">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageweapon"
+                android:layout_toLeftOf="@+id/img_next"
+                android:padding="@dimen/_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_weapon_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:fontFamily="@font/nexa_bold"
+                        android:text="@string/weapon"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20dp" />
+
+                    <TextView
+                        android:id="@+id/txt_weapon_damage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_letstart"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/nexa_light"
+                        android:text="@string/damage"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/imageweapon"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_100dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_10dp"
+                android:src="@drawable/ic_awm"
+                android:elevation="4dp"
+                />
+            <ImageView
+                android:id="@+id/img_next"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_20dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_next"
+                android:elevation="4dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
